@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ferrari F1 3D Experience</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="page-shell">
+    <header class="hero-panel">
+      <div>
+        <p class="eyebrow">Ferrari F1 Live Showcase</p>
+        <h1>Ferrari SF-23</h1>
+        <p class="hero-copy">Explore the ultimate Formula 1 machine in a live animated 3D environment. Rotate the car, watch the wheels spin, and read the full Ferrari performance spec sheet.</p>
+      </div>
+      <div class="hero-badge">Live 3D Motion</div>
+    </header>
+
+    <section class="content-grid">
+      <aside class="details-panel">
+        <div class="detail-card">
+          <h2>Car Highlights</h2>
+          <ul>
+            <li>Team: Scuderia Ferrari</li>
+            <li>Model: SF-23</li>
+            <li>Engine: 1.6L V6 Hybrid Turbo</li>
+            <li>Top Speed: 360+ km/h</li>
+            <li>0-100 km/h: ~2.6 seconds</li>
+          </ul>
+        </div>
+
+        <div class="detail-card">
+          <h2>Performance Specs</h2>
+          <div class="spec-row"><span>Power Unit</span><strong>Hybrid V6 Turbo</strong></div>
+          <div class="spec-row"><span>Drag Reduction System</span><strong>Active DRS</strong></div>
+          <div class="spec-row"><span>Brakes</span><strong>Carbon ceramic</strong></div>
+          <div class="spec-row"><span>Transmission</span><strong>8-speed semi-automatic</strong></div>
+          <div class="spec-row"><span>Weight</span><strong>798 kg (min.)</strong></div>
+        </div>
+
+        <div class="detail-card">
+          <h2>Aerodynamic Design</h2>
+          <p>The SF-23 is engineered for high downforce corners and explosive straight-line speed. The front wing, rear diffuser, and shark fin deliver maximum stability through fast sweeps.</p>
+        </div>
+
+        <div class="detail-card bottom-card">
+          <h2>Race Data</h2>
+          <div class="stat-row"><strong>Reliability:</strong> Premium race-grade materials</div>
+          <div class="stat-row"><strong>Telemetry:</strong> Real-time track feedback</div>
+          <div class="stat-row"><strong>Suspension:</strong> Pushrod front / Pullrod rear</div>
+          <div class="stat-row"><strong>Driver:</strong> Charles Leclerc / Carlos Sainz</div>
+        </div>
+      </aside>
+
+      <article class="viewer-panel">
+        <div class="canvas-frame">
+          <canvas id="f1Canvas"></canvas>
+          <div class="canvas-overlay">
+            <p>Drag to orbit | Scroll to zoom</p>
+            <div class="meter"><span id="speedLabel">Race Mode: READY</span></div>
+          </div>
+        </div>
+      </article>
+    </section>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/three@0.158.0/build/three.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/three@0.158.0/examples/js/controls/OrbitControls.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
